@@ -7,7 +7,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
     # The definitions for the months and days
-bs_months = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
+bs_months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'all']
 bs_days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'all']
 
 def get_filters():
@@ -23,7 +23,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('Please enter the city you wish to see:').lower()
     while city.lower() not in CITY_DATA:
-        print('Sorry, we don\'t have data for that city.')
+        print('Sorry, we don\'t have data for that city. Please enter Chicago, Washington or New York City')
         city = input('Please enter the city you wish to see:').lower()
 
     # TO DO: get user input for month (all, january, february, ... , june)
