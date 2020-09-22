@@ -29,7 +29,7 @@ def get_filters():
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input('Please enter the month name (or enter all) that you wish to see:').lower()
     while month.lower() not in bs_months:
-        print('Sorry, we don\'t have data for that month')
+        print('Sorry, we don\'t have data for that month. Please Enter data for months January - July or enter "all"')
         month = input('Please select from january, february, march, april, may, june or all:').lower()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
